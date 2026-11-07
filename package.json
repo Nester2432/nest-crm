@@ -78,5 +78,19 @@
     "vitest": "^5.0.3"
   },
   "description": "CRM multicanal con agente de IA, para agencias que despliegan una instancia por cliente",
-  "license": "MIT"
+  "license": "MIT",
+  "allowScripts": {
+    "esbuild@0.18.20": true,
+    "esbuild@0.25.12": true,
+    "unrs-resolver@1.11.1": true,
+    "esbuild@0.28.2": true
+  },
+  "overrides": {
+    "@ts-morph/common": {
+      "minimatch": "11.0.1"
+    },
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.1"
+    }
+  }
 }

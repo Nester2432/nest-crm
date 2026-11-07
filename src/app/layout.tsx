@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   const { idioma } = getConfig();
   return (
-    <html lang={idioma} className="h-full antialiased">
+    <html lang={idioma} className="h-full antialiased" suppressHydrationWarning>
       <head>
         {/* Colores de la marca en SSR: sin flash del color por defecto. */}
         <style dangerouslySetInnerHTML={{ __html: cssVariablesMarca() }} />
